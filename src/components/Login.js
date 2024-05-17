@@ -16,7 +16,7 @@ const Login = (props) => {
           const json = await response.json()
           if (json.success){
             console.log(json);console.log("navigate to home page is clicked")
-            localStorage.setItem('token',json.authtoken);
+            localStorage.setItem('token',json.authToken);
             navigate("/home");
             props.showAlert("Logged In Successfully","success")
             //redirect
@@ -32,16 +32,18 @@ const Login = (props) => {
       return (
     <>
     <form  onSubmit={handleSubmit}>
+      <h3>Login </h3>
     <div className="form-group">
       <label htmlFor="email">Email address</label>
       <input type="email" className="form-control" id="email" value={credentials.email} name="email" aria-describedby="emailHelp" onChange={onChange} placeholder="Enter email"/>
-      <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+      
     </div>
     <div className="form-group">
       <label htmlFor="password">Password</label>
-      <input type="password" className="form-control" id="password" value={credentials.password} name="password" onChange={onChange} placeholder="Password"/>
+      <input type="password"  className="form-control" id="password" value={credentials.password} name="password" onChange={onChange} placeholder="Password"/>
     </div>
-    <button type="submit" className="btn btn-primary" >Submit</button>
+    
+    <button type="submit"  className="btn btn-primary mt-3" >Submit</button>
   </form>
   </>
   )

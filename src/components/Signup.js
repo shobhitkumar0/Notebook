@@ -23,7 +23,7 @@ const Signup = (props) => {
       console.log(json);
       if(json.success){
         
-        localStorage.setItem('token',json.authtoken);
+        localStorage.setItem('token',json.authToken);
       
         navigate("/home");
         props.showAlert("Account Created Successfully","success")
@@ -57,7 +57,7 @@ const onChange=(e)=>{
     <label htmlFor="cpassword" className='form-label'>Confirm Password</label>
     <input type="password" className="form-control" id="cpassword"  name="cpassword" onChange={onChange} minLength={5} required />
   </div>
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit"  className="btn btn-primary mt-3" >Submit</button>
 </form>
 </div>
   )

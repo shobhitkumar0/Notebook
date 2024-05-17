@@ -4,15 +4,24 @@
 This application is a full stack MERN (MongoDB, Express.js, React, Node.js) solution designed to manage personal notes. It includes user authentication with JWT and CRUD operations for note management.
 
 ## Features
-- **User Authentication**: Secure login and signup pages using JWT.
+- **User Authentication**: Used JWT and OAuth for authentication and authorization for secure login and signup pages.
 - **CRUD Operations**: Users can create, read, update, and delete their personal notes.
 
 ## Technologies Used
-- **Frontend**: React
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
+- **Frontend**: Utilized HTML,CSS and Javascript along with react to build responsive and interactive user interfaces.Followed MVC architecture for clean code and future expansion possibilities.
+- **Backend**: Built and maintained RESTful APIs using Node.js and Express.
+- **Database**: Maintained database intercation with MongoDB ensuring efficient data retrival and storage.
 - **API Testing**: Postman
 
+## Different Pgaes
+- **Login Page**:
+![Alt text](image.png)
+- **SignUp Page**:
+![Alt text](image-1.png)
+- **Notes Page**:
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
 ## Architecture
 - **MVC Architecture**: The application follows the Model-View-Controller pattern, ensuring a separation of concerns and a more organized codebase.
 
